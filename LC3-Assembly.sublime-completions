@@ -1,0 +1,12 @@
+{
+        "scope": "source.asm",
+        "completions": [
+
+            { "trigger": "ADD", "contents": "ADD ${1:Dest}, ${2:Src1}, ${3:Src2}" },
+            { "trigger": "AND", "contents": "AND ${1:Dest}, ${2:Src1}, ${3:Src2}" },
+            { "trigger": "NOT", "contents": "NOT ${1:Dest}, ${2:Src1}" },
+
+            { "trigger": ".FILL", "contents": ".FILL" },
+            { "trigger": ".BLKW", "contents": ".BLKW" }
+]
+}
