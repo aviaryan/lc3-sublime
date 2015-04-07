@@ -3,6 +3,11 @@
 A Package to provide syntax highlighting for LC3 .asm files in Sublime Text.
   
 
-### Some Features
+### Cool Features
 
-* Goto Symbol corresponds to labels in the assembly code.
+* "Goto Symbol" feature in Sublime Text will correspond to labels in the assembly code.
+
+  
+### Plans
+
+* I would like to add a build system for lc3 assembly. However in Windows, the LC3Edit.exe (the assembler) doesn't seem to work from command-line. If you find a way, please help.
