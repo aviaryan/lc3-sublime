@@ -7,7 +7,7 @@
 		<string>asm</string>
 	</array>
 	<key>name</key>
-	<string>LC3-Assembly</string>
+	<string>LC3-ASM</string>
 	<key>patterns</key>
 	<array>
 		<dict>

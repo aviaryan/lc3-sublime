@@ -1,4 +1,4 @@
-# LC3-Sublime
+# LC3-ASM
 
 A Package to provide syntax highlighting for LC3 .asm files in Sublime Text.
   
