@@ -8,6 +8,7 @@ BRp ASD
 
 six .fill 6
 ADD DST, Src1, Src2
+
 ;
  ; Program to multiply a number by the constant 6
  ;
