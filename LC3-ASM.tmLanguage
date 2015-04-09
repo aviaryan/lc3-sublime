@@ -26,9 +26,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\s*(?i:\.FILL|\.BLKW|\.END|HALT|\.ORIG)</string>
+			<string>\s*(?i:\.FILL|\.BLKW|\.END|.STRINGZ|\.ORIG)</string>
 			<key>name</key>
-			<string>keyword.keys.asm</string>
+			<string>support.type.directives.asm</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s*\b(?i:HALT|IN|OUT|GETC|PUTS)\b</string>
+			<key>name</key>
+			<string>keyword.control.trap.asm</string>
 		</dict>
 		<dict>
 			<key>match</key>

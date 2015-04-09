@@ -34,3 +34,5 @@ ADD R1, R1, #-1 ; R1 keeps track of
 ; R2 IS CHECKER
 AND R2,R2,#0
 ADD R2,R2,#1
+
+hello .STRINGZ ".helloWorld"
