@@ -1,6 +1,6 @@
 # LC3-ASM
 
-A Package to provide syntax highlighting for [LC3](http://people.cs.georgetown.edu/~squier/Teaching/HardwareFundamentals/LC3-trunk/docs/README-LC3tools.html) .asm files in Sublime Text.
+A Package to provide syntax highlighting for [LC3](http://people.cs.georgetown.edu/~squier/Teaching/HardwareFundamentals/LC3-trunk/docs/README-LC3tools.html) .asm files in Sublime Text. See a [screenshot](http://i.imgur.com/a6Qufk5.png).
   
 
 ### Cool Features
