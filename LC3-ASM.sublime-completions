@@ -7,6 +7,25 @@
             { "trigger": "NOT", "contents": "NOT ${1:Dest}, ${2:Src1}" },
 
             { "trigger": ".FILL", "contents": ".FILL" },
-            { "trigger": ".BLKW", "contents": ".BLKW" }
+            { "trigger": ".BLKW", "contents": ".BLKW" },
+            { "trigger": ".STRINGZ", "contents": ".STRINGZ ${1:String-in-quotes}" },
+
+            { "trigger": "LDR", "contents": "LDR ${1:Dest}, ${2:Src}, ${3:x(offSet)}"},
+            { "trigger": "LD", "contents": "LD ${1:Dest}, ${2:Label}"},
+            { "trigger": "LDI", "contents": "LDI ${1:Dest}, ${2:Label}"},
+            { "trigger": "STR", "contents": "STR ${1:Src}, ${2:Dest}, ${3:x(offSet)}"},
+            { "trigger": "ST", "contents": "ST ${1:Src}, ${2:Label}"},
+            { "trigger": "STI", "contents": "STI ${1:Src}, ${2:Label}"},
+            { "trigger": "JMP", "contents": "JMP ${1:Label"},
+            { "trigger": "BRnzp", "contents": "BRnzp ${1:Label}"},
+            { "trigger": "TRAP", "contents": "TRAP ${1:xVector-Address}"},
+            { "trigger": "LEA", "contents": "LEA ${1:R0}, ${2:Src}"},
+            { "trigger": "JSR", "contents": "JSR ${1:Label}"},
+            { "trigger": "RET", "contents": "RET"},
+
+            { "trigger": ".END", "contents": ".END"},
+            { "trigger": ".ORIG", "contents": ".ORIG ${1:xStart-Address}"}
+
+
 ]
 }
