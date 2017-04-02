@@ -23,4 +23,5 @@ A Package to provide syntax highlighting for [LC3](http://people.cs.georgetown.e
 
 ### Screenshot
 
-![Syntax highlighting](http://imgh.us/Screenshot_(9)_7.png)
+![GoTo symbol](https://cloud.githubusercontent.com/assets/4047597/24589201/27683a6e-17f4-11e7-869f-9a682ebf8b15.png)
+![Autocomplete](https://cloud.githubusercontent.com/assets/4047597/24589202/27ef414e-17f4-11e7-98c7-8d1f04be2ff2.png)
