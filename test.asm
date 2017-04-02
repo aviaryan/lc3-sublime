@@ -1,38 +1,34 @@
-;sd
-ADD R1,R1,R2
-NOT R2,R2
-ASDlk ;asd
-;
-ABC NOT R2,R2, x23
-BRp ASD
+; Numbers are to be filled from x2FF0 ourselves and largest will be in R0
+; Number to filled ourselves from x2FF0 to x2FFA
+		.ORIG x3000
+		AND R4,R4,x0
+		ADD R4,R4,xA
+		LD R2,start 		; Load start addr
 
-six .fill 6
-ADD DST, Src1, Src2
+		LDR R1,R2,x0 		; Assuming 1st number as largest
+		ADD R2,R2,x1
+		ADD R4,R4,x-1
 
-;
- ; Program to multiply a number by the constant 6
- ;
- .ORIG x3050
-LD R1, SIX
- LD R2, NUMBER
-AND R3, R3, #0 ; Clear R3. It will
- ; contain the product.
- ; The inner loop
- ;
-AGAIN ADD R3, R3, R2
-ADD R1, R1, #-1 ; R1 keeps track of
- BRp AGAIN ; the iteration.
- ;
- HALT
- ;
- NUMBER .BLKW 1 #3
- SIX .FILL x0006
- .END
 
- 
 
-; R2 IS CHECKER
-AND R2,R2,#0
-ADD R2,R2,#1
+LOOP 	LDR R3,R2,x0 		; Next Number
+		ADD R2,R2,x1 		; increment addr
+		ADD R0,R3,x0 		; make copy of R3
+		JSR 2sCOMP			; twos compliment
+		ADD R3,R1,R3		
+		BRzp SKIP			; if R0<R3 swap them
+		ADD R1,R0,x0
+SKIP	ADD R4,R4,x-1  	
+		BRp LOOP
 
-hello .STRINGZ ".helloWorld"
+		LEA R0,MSG
+		TRAP x22
+
+HLT 	HALT
+MSG		.STRINGZ "Check R1"
+start 	.FILL x2FF0
+		.END
+
+2sCOMP	NOT R3,R3
+		ADD R3,R3,x1
+		RET

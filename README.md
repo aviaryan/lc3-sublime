@@ -23,4 +23,4 @@ A Package to provide syntax highlighting for [LC3](http://people.cs.georgetown.e
 
 ### Screenshot
 
-![Syntax highlighting](http://i.imgur.com/a6Qufk5.png)
+![Syntax highlighting](http://imgh.us/Screenshot_(9)_7.png)
