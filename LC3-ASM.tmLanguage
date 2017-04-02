@@ -38,7 +38,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\s*(?i:AND|ADD|NOT|LDR|LDI|LD|STI|STR|ST|JMP|BR[nzp]*|TRAP|LEA|JSRR|JSR|RET|RTI)(?=\s+?[^,])</string>
+			<string>\s*((?i:AND|ADD|NOT|LDR|LDI|LD|STI|STR|ST|JMP|BR[nzp]*|TRAP|LEA|JSRR|JSR|RTI)(?=\s+?[^,])|(?i:RET)(?=\s*))</string>
 			<key>name</key>
 			<string>support.type.builtin.asm</string>
 		</dict>

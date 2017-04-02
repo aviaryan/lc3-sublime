@@ -1,13 +1,13 @@
 ; Numbers are to be filled from x2FF0 ourselves and largest will be in R0
 ; Number to filled ourselves from x2FF0 to x2FFA
-		.ORIG x3000
-		AND R4,R4,x0
-		ADD R4,R4,xA
-		LD R2,start 		; Load start addr
+.ORIG x3000
+AND R4,R4,x0
+ADD R4,R4,xA
+LD R2,start 		; Load start addr
 
-		LDR R1,R2,x0 		; Assuming 1st number as largest
-		ADD R2,R2,x1
-		ADD R4,R4,x-1
+LDR R1,R2,x0 		; Assuming 1st number as largest
+ADD R2,R2,x1
+ADD R4,R4,x-1
 
 
 
